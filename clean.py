@@ -50,14 +50,18 @@ def mergeData(mask_data, covid_data, election_data):
 
 
 def main():
+    # get data
     mask_data, raw_covid_data, raw_counties_election = createRaws()
 
+    # clean data
     mask_data = cleanMaskData(mask_data)
     covid_data = cleanCovidData(raw_covid_data)
     election_data = cleanElectionData(raw_counties_election)
 
     # merge data
     cleaned = mergeData(mask_data, covid_data, election_data)
+
+    # test
     print(cleaned)
 
 if __name__ == '__main__':
