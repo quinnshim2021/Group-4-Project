@@ -5,7 +5,7 @@ import numpy as np
 def eda(cleanData):
     print(list(cleanData))
     casesByWinningPartyHist(cleanData)
-    casesPerCapitaHist(cleanData)
+    casesPerCapita(cleanData)
     casesVsDeathsScatter(cleanData)
     maskUsage(cleanData)
 
@@ -24,7 +24,7 @@ def casesByWinningPartyHist(data):
     plt.legend()
     plt.show()
 
-def casesPerCapitaHist(data):
+def casesPerCapita(data):
     dataPerCapita = data
     dataPerCapita["cases_per_capita"] = dataPerCapita["cases"]/dataPerCapita["TotalPop"]
     casesData = dataPerCapita["cases_per_capita"]
