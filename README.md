@@ -18,3 +18,11 @@ Histogram (Covid cases per capita for counties for Trump vs Biden)
 Boxplot (Covid data per county)
 Scatterplot (Covid cases vs Deaths per capita)
 Barplot of mask usage (counties for Trump vs counties for Biden)
+
+# Data Modeling
+
+Pearson
+Spearman
+Chi Squared
+KNN
+Linear Regression
