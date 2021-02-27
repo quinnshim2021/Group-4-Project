@@ -11,10 +11,10 @@ Cleaning gets the raw data, then reformats each dataframe to have only necessary
 
 Other notes on cleaning can be found in comments in the code.
 
-# Notes for David
 
-1. around 3100 counties were at the end. This is because some data sets have weird counties (from Guam or ones that aren't actual counties) and others don't have data for everything
+# EDA
 
-2. we'll want to make sure we filter for NaN values (especailly in vote columns) during EDA
-
-3. want to make sure we account for cases/deaths per capita (with toalPop)
+Histogram (Covid cases per capita for counties for Trump vs Biden)
+Boxplot (Covid data per county)
+Scatterplot (Covid cases vs Deaths per capita)
+Barplot of mask usage (counties for Trump vs counties for Biden)

@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
+# run EDA on cleaned data
 def eda(cleanData):
     print(list(cleanData))
     casesByWinningPartyHist(cleanData)
@@ -9,7 +10,8 @@ def eda(cleanData):
     casesVsDeathsScatter(cleanData)
     maskUsage(cleanData)
 
-
+# Histogram of the number of counties in bins of the percentage of covid cases.
+# These were also color coded between Trump and Biden winning counties
 def casesByWinningPartyHist(data):
     dataPerCapita = data
     dataPerCapita["cases_per_capita"] = dataPerCapita["cases"]/dataPerCapita["TotalPop"]
@@ -24,6 +26,7 @@ def casesByWinningPartyHist(data):
     plt.legend()
     plt.show()
 
+# Boxplot of the number of covid cases per capita in US counties
 def casesPerCapita(data):
     dataPerCapita = data
     dataPerCapita["cases_per_capita"] = dataPerCapita["cases"]/dataPerCapita["TotalPop"]
@@ -34,19 +37,8 @@ def casesPerCapita(data):
     plt.xlabel('US Counties')
     plt.ylabel('COVID Cases Per Capita')
     plt.show()
-    # Plot as histogram
 
-    # bins = 30
-    # plt.hist(casesData, bins=bins)
-    # plt.title('County COVID Cases Per Capita')
-    # plt.xlabel('COVID Cases by % of Population')
-    # plt.ylabel('Number of Counties')
-    # plt.show()
-
-    
-    
-
-
+# Scatterplot of the covid cases vs deaths for all counties
 def casesVsDeathsScatter(data):
     casesData = data["cases"]
     deathsData = data["deaths"]
@@ -56,6 +48,7 @@ def casesVsDeathsScatter(data):
     plt.ylabel('Deaths')
     plt.show()
 
+# Barplot of the percentage of mask use for Trump and Biden winning counties
 def maskUsage(data):
     maskCategories = ["NEVER", "RARELY", "SOMETIMES", "FREQUENTLY", "ALWAYS"]
     trumpData = []
