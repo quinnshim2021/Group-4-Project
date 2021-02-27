@@ -4,6 +4,7 @@ from modeling import *
 import pandas
 
 def runModeling(cleaned):
+    # pairing to test
     pairings = [
         ["percent_Biden", "cases_pc"],
         ["percent_Trump", "cases_pc"],
@@ -17,16 +18,13 @@ def runModeling(cleaned):
         ["percent_Trump", "infrequent_mask_use"]
     ]
 
-    # all around, weak correlations with small p values between percent Biden/percent Trump and number of cases
-    # medium correlation between Biden and frequent mask use, opposite for Biden and infrequent mask use
-    # medium correlation between Trump and infrequent mask use, opposite for frequent mask use
-    # WRITE UP SIGNIFICANCE OF SPEARMAN if it's different than pearson
     linearRegression(cleaned, "cases_pc", "percent_Trump")
     for pair in pairings:
         pearson(cleaned, pair[1], pair[0])
         spearman(cleaned, pair[1], pair[0])
         linearRegression(cleaned, pair[1], pair[0])
     
+    modeling(cleaned)
 
 
 # first grabs data, then cleans, then does eda
