@@ -1,0 +1,20 @@
+Pearson Coefficient (cases_pc, percent_Biden):	(-0.0766209146534462, 2.06714338429913e-05)Spearman Coefficient (cases_pc, percent_Biden):	SpearmanrResult(correlation=-0.03672726722852208, pvalue=0.04150275839522372)R2 of Linear Regression (cases_pc, percent_Biden): 0.0051791070252055205
+
+Pearson Coefficient (cases_pc, percent_Trump):	(-0.13796744624650187, 1.4504789804665914e-14)Spearman Coefficient (cases_pc, percent_Trump):	SpearmanrResult(correlation=-0.15419980654191662, pvalue=7.487772220506396e-18)R2 of Linear Regression (cases_pc, percent_Trump): 0.010021415926645294
+
+Pearson Coefficient (deaths_pc, percent_Biden):	(0.0179133780570218, 0.3202278429228074)Spearman Coefficient (deaths_pc, percent_Biden):	SpearmanrResult(correlation=0.044984904989892494, pvalue=0.012517230758566988)R2 of Linear Regression (deaths_pc, percent_Biden): -0.0044052411037360795
+
+Pearson Coefficient (deaths_pc, percent_Trump):	(-0.20975706781392478, 5.614064392453113e-32)Spearman Coefficient (deaths_pc, percent_Trump):	SpearmanrResult(correlation=-0.24696610541659314, pvalue=4.865318437551978e-44)R2 of Linear Regression (deaths_pc, percent_Trump): 0.07114999396404409
+
+Pearson Coefficient (deaths_over_cases, percent_Biden):	(0.038466642050133754, 0.03275428986702074)Spearman Coefficient (deaths_over_cases, percent_Biden):	SpearmanrResult(correlation=0.09047188927173705, pvalue=4.902719160551016e-07)R2 of Linear Regression (deaths_over_cases, percent_Biden): -0.0018577846407463738
+
+Pearson Coefficient (deaths_over_cases, percent_Trump):	(-0.17075437470773075, 1.369642376767162e-21)Spearman Coefficient (deaths_over_cases, percent_Trump):	SpearmanrResult(correlation=-0.20138198912275584, pvalue=1.480916604560887e-29)R2 of Linear Regression (deaths_over_cases, percent_Trump): -0.01895434130246665
+
+Pearson Coefficient (frequent_mask_use, percent_Biden):	(0.40453745266733837, 1.1641365063478282e-121)Spearman Coefficient (frequent_mask_use, percent_Biden):	SpearmanrResult(correlation=0.4428716767764097, pvalue=3.467301832748238e-148)R2 of Linear Regression (frequent_mask_use, percent_Biden): 0.19758593075789577
+
+Pearson Coefficient (infrequent_mask_use, percent_Biden):	(-0.40455373613653356, 1.1361984072037854e-121)Spearman Coefficient (infrequent_mask_use, percent_Biden):	SpearmanrResult(correlation=-0.4429541062868718, pvalue=3.014234929758886e-148)R2 of Linear Regression (infrequent_mask_use, percent_Biden): 0.144512928402582
+
+Pearson Coefficient (frequent_mask_use, percent_Trump):	(-0.3772463405156684, 8.680708715418168e-105)Spearman Coefficient (frequent_mask_use, percent_Trump):	SpearmanrResult(correlation=-0.38646669251102495, pvalue=2.6073340251789798e-110)R2 of Linear Regression (frequent_mask_use, percent_Trump): 0.1634605007038562
+
+Pearson Coefficient (infrequent_mask_use, percent_Trump):	(0.37736023806477464, 7.43741293779136e-105)Spearman Coefficient (infrequent_mask_use, percent_Trump):	SpearmanrResult(correlation=0.38654451599680145, pvalue=2.337890005642845e-110)R2 of Linear Regression (infrequent_mask_use, percent_Trump): 0.16551634341740695
+
